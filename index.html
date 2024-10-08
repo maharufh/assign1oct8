@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left section - Order Summary -->
+        <div class="order-summary">
+            <h2>Pay Powdur</h2>
+            <h1>$134.00</h1>
+
+            <!-- Item 1 -->
+            <div class="item">
+                <div class="product-details">
+                    <img src="product1-image.jpg" alt="Pure Set" class="product-image">
+                    <div>
+                        <p>Pure Set</p>
+                        <select class="quantity-select">
+                            <option value="1">Qty 1</option>
+                            <option value="2">Qty 2</option>
+                            <option value="3">Qty 3</option>
+                        </select>
+                    </div>
+                </div>
+                <span>$65.00</span>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item">
+                <div class="product-details">
+                    <img src="product2-image.jpg" alt="Pure Glow Cream" class="product-image">
+                    <div>
+                        <p>Pure Glow Cream</p>
+                        <select class="quantity-select">
+                            <option value="1">Qty 1</option>
+                            <option value="2" selected>Qty 2</option>
+                            <option value="3">Qty 3</option>
+                        </select>
+                    </div>
+                </div>
+                <span>$64.00</span>
+            </div>
+
+            <!-- Subtotal and Shipping -->
+            <div class="summary-details">
+                <div class="item">
+                    <p>Subtotal</p>
+                    <span>$129.00</span>
+                </div>
+                <div class="item">
+                    <p>Shipping</p>
+                    <span>$5.00</span>
+                </div>
+            </div>
+
+            <!-- Total -->
+            <div class="item total-due">
+                <p>Total due</p>
+                <span>$134.00</span>
+            </div>
+        </div>
+
+        <!-- Right section - Payment Information -->
+        <div class="payment-info">
+            <button class="apple-pay-btn"> Pay</button>
+            <p>Or pay with card</p>
+
+            <!-- Shipping information -->
+            <div class="shipping-info">
+                <h3>Shipping information</h3>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="name">Shipping address</label>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <select>
+                        <option>United States</option>
+                        <option>United States</option>
+                        <option>United States</option>
+                        <option>United States</option>
+                        
+                    </select>
+                    <input type="text" id="address" placeholder="Address" required>
+                </form>
+            </div>
+
+            <!-- Payment details -->
+            <div class="payment-details">
+                <h3>Payment details</h3>
+                <form>
+                    <label for="card">Card information</label>
+                    <input type="text" id="card" placeholder="1234 1234 1234 1234" required>
+                    <input type="text" placeholder="MM / YY" required>
+                    <input type="text" placeholder="CVC" required>
+                    <div class="card-icons">
+                        <img src="visa-logo.png" alt="Visa">
+                        <img src="mastercard-logo.png" alt="MasterCard">
+                        <img src="amex-logo.png" alt="Amex">
+                    </div>
+                    <label>
+                        <input type="checkbox" checked> Billing address is same as shipping
+                    </label>
+                    <button type="submit">Pay $134.00</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
